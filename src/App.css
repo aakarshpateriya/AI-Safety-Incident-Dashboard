@@ -1,5 +1,7 @@
 /* Global Styles */
 :root {
+  align-items: center;
+  align-content: center;
   --primary-color: #4a6fa5;
   --primary-light: #6789bd;
   --primary-dark: #345888;

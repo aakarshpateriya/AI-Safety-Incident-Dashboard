@@ -45,19 +45,20 @@ function App() {
     const dateB = new Date(b.reported_at).getTime();
     return sortOrder === "Newest First" ? dateB - dateA : dateA - dateB;
   });
-
+ 
   return (
     <div className="App">
       <h1>AI Safety Incident Dashboard</h1>
       
       <div className="controls-container">
-        <FilterControls onFilterChange={(severity: "All" | "Low" | "Medium" | "High") => handleFilterChange(severity)} />
-        <SortControls onSortChange={(order: "Newest First" | "Oldest First") => handleSortChange(order)} />
+        <FilterControls onFilterChange={handleFilterChange} />
+        <SortControls onSortChange={handleSortChange} />
       </div>
       
       <IncidentList incidents={sortedData} />
-      <ReportIncidentForm onSubmit={(title: string, description: string, severity: "Low" | "Medium" | "High") => handleReportIncident(title, description, severity)} />
+      <ReportIncidentForm onSubmit={handleReportIncident} />
     </div>
   );
 }
+
 export default App;
