@@ -9,7 +9,7 @@ This is a frontend assignment for HumanChain, implementing an **AI Safety Incide
 - **Framework:** React
 - **Language:** TypeScript
 - **Styling:** CSS (Flexbox/Grid for layout)
-- **Deployment:** [Vercel](https://vercel.com)
+- **Deployment:** [Vercel]([https://vercel.com](https://ai-safety-incident-dashboard-kmvk-2hbcjr7zl.vercel.app/))
 
 ---
 
