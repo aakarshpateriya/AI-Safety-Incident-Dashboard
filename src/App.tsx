@@ -17,20 +17,23 @@ function App() {
     setFilteredIncidents(incidents);
   }, [incidents]);
 
-  const handleFilterChange = (severity: "All" | "Low" | "Medium" | "High") => {
-    setSeverityFilter(severity);
+  // Fix type issue by making the function accept string and then casting it
+  const handleFilterChange = (severity: string) => {
+    setSeverityFilter(severity as "All" | "Low" | "Medium" | "High");
   };
 
-  const handleSortChange = (order: "Newest First" | "Oldest First") => {
-    setSortOrder(order);
+  // Fix type issue by making the function accept string and then casting it
+  const handleSortChange = (order: string) => {
+    setSortOrder(order as "Newest First" | "Oldest First");
   };
 
-  const handleReportIncident = (title: string, description: string, severity: "Low" | "Medium" | "High") => {
+  // Fix type issue by making the function accept string and then casting it
+  const handleReportIncident = (title: string, description: string, severity: string) => {
     const newIncident: Incident = {
       id: incidents.length + 1, // Increment ID for new incident
       title,
       description,
-      severity,
+      severity: severity as "Low" | "Medium" | "High",
       reported_at: new Date().toISOString(),
     };
     setIncidents((prevIncidents) => [...prevIncidents, newIncident]);
