@@ -2,6 +2,8 @@
 
 This is a frontend assignment for HumanChain, implementing an **AI Safety Incident Dashboard**. The dashboard displays, filters, sorts, and logs AI safety incidents with a clean and interactive UI.
 
+Visit for the app : [  https://ai-safety-incident-dashboard-kmvk-2hbcjr7zl.vercel.app/ ]
+
 ---
 
 ## 🛠️ Tech Stack
@@ -16,6 +18,8 @@ This is a frontend assignment for HumanChain, implementing an **AI Safety Incide
 ## 📦 Setup Instructions
 
 ### 1. Clone the Repository
+
+
 
 ```bash
 git clone https://github.com/your-username/ai-safety-dashboard.git
